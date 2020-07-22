@@ -89,7 +89,7 @@ header {
     z-index: 3;
 }
 
-#logo { 
+#logo {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     font-size: 1.7rem;
     font-weight: 800;
@@ -127,6 +127,10 @@ header ul li {
     margin: 0 15px;
 }
 
+#nav-menu {
+    display:none;
+}
+
 #close-flyout {
     display: none;
 }
@@ -152,7 +156,7 @@ header ul.is-sticky li a.active {
 }
 /* end: header styles */
 
-/* progects sections */
+/* projects sections */
 .offer1 {
     margin-bottom: 50rem;
     padding: 1rem;
@@ -174,7 +178,7 @@ header ul.is-sticky li a.active {
 }
 
 #images {
-    
+
     display: block;
     float:left;
     border-style:solid;
@@ -203,98 +207,11 @@ header ul.is-sticky li a.active {
     margin-right: 2rem;
 }
 
-
-/* start: contact us styles */
-#contact {
-    background: #f8f9fa;
-    padding: 4rem 0 8rem;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#form-container {
-    text-align: right;
-    width: 58%;
-    background: #FFF;
-    padding: 3rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#form-container h3 {
-    color: #000;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 2rem;
-}
-
-#form-container label {
-    display: block;
-    color: #000;
-    margin-top: 1rem;
-}
-
-#form-container input,
-#form-container textarea {
-    text-align: right;
-    display: block;
-    border-radius: 20px;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    width: 100%;
-    box-sizing: border-box;
-    height: 43px;
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1rem;
-    color: #495057;
-}
-
-#form-container textarea {
-    height: 170px;
-    margin-bottom: 2rem;
-    resize: none;
-}
-
-#address-container {
-    text-align: center;
-    width: 38%;
-    background: #fff;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#address-container label {
-    font-weight: 700;
-    display: block;
-    margin-top: 2rem;
-}
-
-#address-container label:first-child {
-    margin-top: 0;
-}
-
-#address-container address {
-    margin-bottom: 1.5rem;
-    font-style: normal;
-}
-
-#address-container a {
-    text-decoration: none;
-    color: #f69314;
-}
-
-#address-container a:hover {
-    text-decoration: underline;
-}
-/* end: contact us styles */
-
 .pagination {
     font-family: monospace;
-    padding: 0.2rem 40% 0.2rem 40%;
+    padding: 2rem 30% 0rem 40%;
 }
+
 
 /* start: footer styles */
 footer {
@@ -375,7 +292,7 @@ footer .footer-subscribe input {
     color: #fff;
     box-sizing: border-box;
     width: 80%;
-    
+
 
 }
 
@@ -443,15 +360,16 @@ footer small a:hover {
      .image6 {
         display: none;
     }
-    
+
     .image5 {
         display: none;
     }
-    
-    
+
+
 }
 
 @media (max-width: 991px) {
+
     #logo {
         top: 1px;
     }
@@ -471,6 +389,10 @@ footer small a:hover {
         width: 300px;
         box-sizing: border-box;
         box-shadow: 5px 0 10px 3px #999;
+    }
+
+    #nav-menu {
+        display:block;
     }
 
     #close-flyout {
@@ -502,11 +424,12 @@ footer small a:hover {
     nav ul li a:hover {
         color: #f69314;
     }
-   
+
     .firstGrop {
         margin-bottom: 100rem;
     }
-    
+
+
     #images {
         image-resolution: snap;
         border-style:solid;
@@ -521,7 +444,7 @@ footer small a:hover {
         font-size: 2rem;
         margin: 3rem 10rem 1rem 1rem;
     }
-    
+
     footer .footer-subscribe ul {
     list-style-type: none;
     padding: 0;
@@ -546,7 +469,7 @@ footer small a:hover {
     p {
         font-size: 1rem;
     }
-        
+
     #images {
         float: right;
         image-resolution: snap;
@@ -560,13 +483,14 @@ footer small a:hover {
 
     .discreption {
         font-family: cursive, monospace, sans-serif;
-        margin: 0 20%;
+        margin-top:0px;
+        margin-right: 2rem;
         font-size: 1.8rem;
         float: right;
     }
 
     .discreption h2 {
-        margin-top: 4rem;
+        margin-right: 2.5rem;
     }
 
     .discreption p {
@@ -579,32 +503,13 @@ footer small a:hover {
         max-width: 540px;
     }
 
-    #hero .hero-text {
-        width: 400px;
-    }
-
-    
-    #contact .flex {
-        flex-wrap: wrap;
-    }
-
-    #form-container {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    #address-container {
-        width: 100%;
-        margin-top: 2rem;
-    }
-    
     .pagination {
         font-family: monospace;
-        padding: 0.2rem 32.5% 0.2rem 32.5%;
+        padding: 8rem 32.5% 0rem 32.5%;
 }
 
     footer {
-        
+
         padding: 4rem 20% 2rem 20%;
     }
 
@@ -633,7 +538,7 @@ footer small a:hover {
     footer h5.follow-us {
         margin-top: 2rem;
     }
-    
+
   footer .footer-subscribe ul {
         margin-left: 33%;
     }
@@ -643,7 +548,7 @@ footer small a:hover {
     #hero .hero-text {
         width: 330px;
     }
-    
+
     #images {
     float: right;
     image-resolution: snap;
@@ -658,18 +563,19 @@ footer small a:hover {
     .discreption {
         font-family: cursive, monospace, sans-serif;
         font-size: 1.8rem;
+        margin-right:2.5rem;
         float: right;
     }
 
     .discreption h2 {
-        margin-top: 2rem;
+        margin-right: 1rem;
     }
 
-.discreption p {
+    .discreption p {
     text-align: right;
     margin-top: 2rem;
     margin-right: 2rem;
-}
+    }
 
     #contact {
         padding: 4rem 0;
@@ -687,38 +593,35 @@ footer small a:hover {
         font-family: monospace;
         padding: 0.2rem 18% 0.2rem 18%;
 }
-    
+
     footer {
         padding: 2rem 0;
     }
-    
+
     footer .footer-subscribe ul {
         margin-left: 29%;
     }
 }
 
 @media (max-width: 375px) {
-     
+
     #hero .hero-text {
         max-width: 275px;
         width: 100%;
   }
-  
+
     .discreption {
         font-family: cursive, monospace, sans-serif;
-        font-size: 1.8rem;
-        float: right;
+        font-size: 1rem;
+        text-align:center;
+        margin-right:1.5rem;
     }
 
-.discreption h2 {
-    margin-top: 4rem;
+    .discreption h2 {
+    font-size:1.5rem;
+    margin-right: 0.5rem;
 }
 
-.discreption p {
-    text-align: right;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
 
     #images {
     border-style:solid;
@@ -728,33 +631,36 @@ footer small a:hover {
     width:94%;
     overflow:hidden;
 }
-    
+
     nav ul {
         width: 200px;
     }
-    
+
     footer .footer-subscribe ul {
         margin-left: 20%;
-    } 
+    }
 }
 
 @media (max-width: 320px) {
-  
+
+#logo {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin:0px 0px 0rem -5rem;
+    text-decoration: none;
+    position: relative;
+    top: 4px;
+}
+
 .discreption {
     font-family: cursive, monospace, sans-serif;
-    font-size: 1.8rem;
-    float: right;
-}
+    font-size: 1rem;
+    margin-right:1.4rem;
+    }
 
-.discreption h2 {
-    margin-top: 4rem;
-}
 
-.discreption p {
-    text-align: right;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
     #images {
     border-style:solid;
     border-width:1px;
@@ -763,16 +669,16 @@ footer small a:hover {
     width:96%;
     overflow:hidden;
 }
-    
+
   nav ul {
     width: 200px;
   }
-    
+
   .pagination {
     font-family: monospace;
     padding: 0.2rem 13% 0.2rem 13%;
 }
-    
+
   footer .footer-subscribe ul {
         margin-left: 20%;
     }
